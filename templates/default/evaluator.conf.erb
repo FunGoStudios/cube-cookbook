@@ -1,0 +1,8 @@
+description "Cube Evaluator"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+
+exec sudo -u www-data node /usr/local/lib/node_modules/cube/bin/evaluator.js
